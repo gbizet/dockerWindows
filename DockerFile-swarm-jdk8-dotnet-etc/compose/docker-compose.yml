@@ -1,0 +1,7 @@
+mongo:
+  image: stefanscherer/mongo-windows:3.2.6
+
+app:
+  build: .
+  links:
+    - mongo
